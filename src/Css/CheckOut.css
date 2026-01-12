@@ -1,0 +1,43 @@
+/* CheckOut.css */
+.checkout-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .order-success-card {
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .footer-nav .nav-link {
+    padding: 0.25rem 0;
+    color: #6c757d;
+  }
+  
+  .footer-nav .nav-link:hover {
+    color: #0d6efd;
+  }
+  
+  .message-edit-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .message-edit-container .form-control {
+    flex-grow: 1;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 991.98px) {
+    .checkout-container {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 767.98px) {
+    .checkout-container {
+      padding: 15px;
+    }
+  }

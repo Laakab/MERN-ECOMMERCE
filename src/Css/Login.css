@@ -1,0 +1,19 @@
+.bg-gradient {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+.login-page .card {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.login-page .form-control {
+  height: 45px;
+  border-left: 0;
+}
+
+.login-page .input-group-text {
+  border-right: 0;
+  background-color: #f8f9fa;
+}

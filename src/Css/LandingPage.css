@@ -1,0 +1,80 @@
+/* LandingPage.css */
+
+/* Carousel Styles */
+.carousel-img-1 {
+    height: 500px;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                url('https://picsum.photos/1200/500?random=1');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .carousel-img-2 {
+    height: 500px;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                url('https://picsum.photos/1200/500?random=2');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .carousel-caption {
+    bottom: 25%;
+  }
+  
+  /* Product Card Styles */
+  .product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  /* Feature Item Styles */
+  .feature-item {
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .feature-item:hover {
+    background-color: #f8f9fa;
+    transform: scale(1.03);
+  }
+  
+  /* Collapse Icon Animation */
+  .rotate-icon {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .carousel-img-1, 
+    .carousel-img-2 {
+      height: 300px;
+    }
+    
+    .carousel-caption {
+      bottom: 15%;
+    }
+    
+    .carousel-caption h3 {
+      font-size: 1.5rem;
+    }
+    
+    .carousel-caption p {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Animation Enhancements */
+  .fade-in {
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }

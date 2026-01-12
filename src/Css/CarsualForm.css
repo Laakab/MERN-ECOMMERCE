@@ -1,0 +1,114 @@
+/* Main container styling */
+.carsual-form-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form title styling */
+  .carsual-form-title {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  /* Form input styling */
+  .carsual-form .form-control, 
+  .carsual-form .form-select {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 0.75rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .carsual-form .form-control:focus, 
+  .carsual-form .form-select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+  }
+  
+  /* Form label styling */
+  .carsual-form .form-label {
+    font-weight: 500;
+    color: #34495e;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Image preview cards */
+  .carsual-form .image-preview-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+  }
+  
+  .carsual-form .image-preview-card:hover {
+    transform: translateY(-2px);
+  }
+  
+  .carsual-form .image-preview-card .card-img-top {
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  /* Remove button styling */
+  .carsual-form .remove-image-btn {
+    background-color: #e74c3c;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .carsual-form .remove-image-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Submit button styling */
+  .carsual-form .submit-btn {
+    background-color: #3498db;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  
+  .carsual-form .submit-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .carsual-form .submit-btn:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+  }
+  
+  /* Error message styling */
+  .carsual-form .error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 0.75rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    border: 1px solid #f5c6cb;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .carsual-form-container {
+      padding: 1.5rem;
+      margin: 1rem;
+    }
+    
+    .carsual-form-title {
+      font-size: 1.5rem;
+    }
+  }
