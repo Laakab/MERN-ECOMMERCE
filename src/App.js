@@ -25,6 +25,7 @@ import AdminPasswordTable from './Components/AdminPassTable'
 import AdsTable from './Components/AdsTable'
 import ProductsTable from './Components/ProductsTable'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProtectedRoute from './Components/ProtectedRoute';
 import EventCard from './Components/EventCard';
@@ -54,7 +55,7 @@ function App() {
 
   return (
     <div className="App">
-
+      <Analytics />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={
